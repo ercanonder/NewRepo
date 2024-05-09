@@ -1,0 +1,420 @@
+﻿@page "/FormA"
+@using Microsoft.JSInterop
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/ReduktorSecim.css" />
+    <link rel="stylesheet" href="/css/Deneme.css" />
+    <link rel="stylesheet" href="/css/IlkForm_a.css" />
+    <link rel="stylesheet" href="/css/forma_table.css" />
+    <link rel="stylesheet" href="/css/Aform.css" />
+</head>
+<body>
+    <div class="box" id="box2">
+        Redüktör  Seçim Programı
+    </div>
+    <div class="box" id="box3">
+        <div class="container">
+            <div class="frame">
+                <div class="blazordiv">
+                    <div class="blazor-section">1</div>
+                    <div class="blazor-section">2</div>
+                    <div class="blazor-section">3</div>
+                    <div class="blazor-section">4</div>
+                    <div class="blazor-section">5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box" id="box4">
+        <div class="container2">
+            <div class="üst">
+                <div class="forma-sol">
+                    <div class="sol-ic-bir">
+                        <div style="margin-top:9%";>
+                            <h2 class="align-right">Redüktör Tipi</h2>
+                        </div>
+                        <div style="margin-top:25%;">
+                            <h2 class="align-right">Gerilim ve Frekans</h2>
+                        </div>
+                        <div>
+                            <h2 class="align-right"></h2>
+                        </div>
+                        <div style="margin-top:90%;">
+                            <h2 class="align-right">Motor Verim Sınıfı</h2>
+                        </div>
+                        <div style="margin-top:10%;">
+                            <h2 class="align-right">Çıkış Kuvvetleri</h2>
+                        </div>
+                        <div style="margin-top:10%;">
+                            <h2 class="align-right">Çıkış Rulmanları</h2>
+                        </div>
+                        <div style="margin-top:15%;">
+                            <h2 class="align-right">Otoblokajlık</h2>
+                        </div>
+                    </div>
+                    <div class="sol-ic-iki">
+                        <div>
+                            <select class="reduktor_tip">
+                                <option selected="selected" value="rdrtip">EV - Sonsuz Tip, IEC Giriş Flanşlı, Motorlu </option>
+                                <option  value="rdrtip">EV - Sonsuz Tip, IEC Giriş Flanşlı, Motorlu </option>
+                            </select>
+                        </div>
+                        <div style="margin-top:2%;">
+                            <select class="gerilim">
+                                <option selected="selected" value="rdrtip">50 Hz - 400 V </option>
+                                <option  value="rdrtip">50 Hz - 400 V </option>
+                            </select>
+                        </div>
+                        <div class="bosAlan">
+                            <div class="alanbir">
+                                <input type="radio" id="p1kw" name="options" value="p1kw" checked="checked" />
+                                <label for="p1kw">p1 [kW]</label>
+                            </div>
+                            <div class="alanbir">
+                                <input type="radio" id="m2nm" name="options" value="m2nm" />
+                                <label for="m2nm">m2 [nM]</label>
+                            </div>
+                            <div class="alanuc">
+                                <input type="radio" id="p2kw" name="options" value="p2kw" />
+                                <label for="p2kw">p2 [kW]</label>
+                                <input type="text" id="p2kw" value="1,5" />
+                                <div style="margin-top:13%;text-align:right;">
+                                    <label for="n2rpm">n2 [rpm]</label>
+                                    <input type="text" id="n2rpm" value="50" />
+                                </div>
+                                <div style="margin-top:13%;text-align:right;">
+                                    <label for="fs">fs</label>
+                                    <input type="text" id="fs" value="1,3" />
+                                </div>
+                            </div>
+
+                            <div class="alandört">
+                                <div class="range">
+                                    <input class="deger" type="text" id="sliderDeger" value="%20" />
+                                    <input type="range" id="slider" name="range" min="0" max="100" value="20" class="slider">
+                                </div>
+                                <div class="range_iki">
+                                    <input class="deger" type="text" id="sliderDeger" value="%20" />
+                                    <input type="range" id="slider" name="range" min="0" max="100" value="20" class="slider">
+                                </div>
+                                <div>
+                                    <img class="fsimage" src="/css/images/plus.png" style="background-color:transparent;margin-top:15%; margin-left:5%;"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="motorverim">
+                            <div class="motorverimsag">
+                                <input type="radio" id="ie1" name="motor_verim" value="IE1">
+                                <label for="ie1">IE1</label>
+
+                                <input type="radio" id="ie2" name="motor_verim" value="IE2">
+                                <label for="ie2">IE2</label>
+
+                                <input type="radio" id="ie3" name="motor_verim" value="IE3" checked="checked">
+                                <label for="ie3">IE3</label>
+
+                                <input type="radio" id="ie4" name="motor_verim" value="IE4">
+                                <label for="ie4">IE4</label>
+                            </div>
+                            <hr class="horizontal-line">
+                        </div>
+
+                        <div class="cikis_kuvvetleri">
+                            <div class="kuvvet_radio">
+                                <input type="radio" id="dikkatealma" name="cikis_kuvveti" value="Dikkate Alma" checked="checked" @onclick="(() => ToggleDivDisplay(true))">
+                                <label for="dikkatealma">Dikkate Alma</label>
+
+                                <input type="radio" id="dikkateal" name="cikis_kuvveti" value="Dikkate Al" @onclick="(() => ToggleDivDisplay(false))">
+                                <label for="dikkateal">Dikkate Al</label>
+                            </div>
+                            <hr class="horizontal-line">
+                        </div>
+
+                        <div class="cikis_rulmanlari">
+                            <div class="rulman_radio">
+                                <input type="radio" id="stdrt" name="cikis_rulmani" value="stdrt" checked="checked">
+                                <label for="stdrt">Standart</label>
+
+                                <input type="radio" id="rdylkuv" name="cikis_rulmani" value="rdylkuv">
+                                <label for="rdylkuv">Radyal Kuv.(RF)</label>
+
+                                <input type="radio" id="eksnlkuv" name="cikis_rulmani" value="eksnlkuv">
+                                <label for="eksnlkuv">Eksenel Kuv.(AF)</label>
+                            </div>
+                            <hr class="horizontal-line">
+                        </div>
+
+                        <div class="otoblokajlik">
+                            <div class="otoblokaj_radio">
+                                <input type="radio" id="tumu" name="otoblokaj" value="tumu" checked="checked">
+                                <label for="tumu">Tümü</label>
+
+                                <input type="radio" id="yok" name="otoblokaj" value="yok">
+                                <label for="yok">Yok</label>
+
+                                <input type="radio" id="sttk" name="otoblokaj" value="sttk">
+                                <label for="sttk">Statik</label>
+
+                                <input type="radio" id="dnmk" name="otoblokaj" value="dnmk">
+                                <label for="dnmk">Dinamik</label>
+                            </div>
+                            <hr class="horizontal-line">
+                        </div>
+
+                        </div>
+
+                </div>
+                <div class="right">
+                    <img class="formA_resim" src="/css/images/forma_ev.png" />
+                </div>
+            </div>
+
+            <div class="ortaGenel" style="@ortaGenelDisplayStyle">
+                   <div class="ortaUst">
+                    <div style="width:2.5%;height:45%;background-color:#BE1C7F;border-radius:20%;display:flex;justify-content:center;align-items:center;vertical-align:central;">
+                        <img src="/css/images/minus.png"/>
+                       </div>
+                    <label style="margin-left:1%;font-family:'Montserrat', sans-serif;font-size:13px;color:#000000;">
+                           Çıkış Radyal Yük ve Eksenel Yük Hesaplama(Dolu Mil için geçerlidir.)
+                           </label>
+                   </div>
+                <div class="orta">
+                    <div class="cikisKuvvetleriSol">
+                        <div class="ortaBir">
+                            <input type="radio" id="rdylyuk" name="yukTuru" value="rdylyuk" checked="checked" @onclick="(() => ToggleRadios(true))" />
+                            <label for="rdylyuk">Radyal Yük (Fqam)</label>
+                        </div>
+                        <div class="ortaIki">
+                            <div class="ortaIkiSol">
+                                <input type="radio" id="rdylyukAlt" name="yukTuruAlt" value="knddeger" disabled="@(eksnlyukSelected)" />
+                                <label for="rdylyukAlt">Kendi Değerim</label>
+
+                                <input type="radio" id="rdylyukAltIki" name="yukTuruAlt" value="hspla" checked="checked" disabled="@(eksnlyukSelected)" />
+                                <label for="rdylyukAltIki">Hesapla</label>
+                            </div>
+                            <div class="ortaIkiSag">
+                                <div class="ortaIkiSagIc">
+                                    <input type="text" id="n" value="100" />
+                                    <label for="n">N</label>
+                                </div>
+                                <div class="ortaIkiSagIc" style="margin-top:15%;">
+                                    <input type="text" id="mn" value="50" />
+                                    <label for="mn">mn</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ortaUc">
+                            <label for="bglntip">Bağlantı Tipi</label>
+                            <input type="text" id="bglntip" value="Kaplin"/>                            
+                        </div>
+                    </div>
+
+                    <div class="cikisKuvvetleriSag">
+                        <div class="cikisKuvvetleriSagBir">
+                            <input type="radio" id="eksnlyuk" name="yukTuru" value="eksnlyuk" @onclick="(() => ToggleRadios(false))" />
+                            <label for="eksnlyuk">Eksenel Yük (Fama)</label>
+                        </div>
+                        <div class="cikisKuvvetleriSagIki">
+                            <div class="cikisKuvvetleriSagIkiSol">
+                                <label for="n">Eksenel Yük</label>
+                            </div>
+                            <div class="cikisKuvvetleriSagIkiSag">
+                                <input type="text" id="n" value="100" />
+                                <label for="n">N</label>
+                            </div>
+                        </div>
+                        <div class="cikisKuvvetleriSagUc">
+                            <div class="cikisKuvvetleriSagUcSol">
+                                <label>Yük Yönü</label>
+                            </div>
+                            <div class="cikisKuvvetleriSagUcSag">
+                                <input type="radio" id="bsm" name="yukYonu" value="basma" checked="checked" disabled="@(rdylyukSelected)">
+                                <label for="bsm">Basma</label>
+
+                                <input type="radio" id="ckm" name="yukYonu" value="cekme" disabled="@(rdylyukSelected)">
+                                <label for="ckm">Çekme</label>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+               </div>
+                <div class="alt">
+                    <div class="table-container">
+                        <table>
+                            <tr>
+                                <th>Motor Gücü[kw]</th>
+                                <th>n2 [d/dak]</th>
+                                <th>Çıkış Torku [nm]</th>
+                                <th>Tahvil</th>
+                                <th>Fqam (Std.)[N]</th>
+                                <th>Fama (Std+)[N]</th>
+                                <th>Servis Faktörü</th>
+                                <th>Tip</th>
+                                <th>Akım IE3[A]</th>
+                                <th>Ağırlık[kg]</th>
+                            </tr>
+                            <tr>
+                                <td>1,5</td>
+                                <td>48</td>
+                                <td>222</td>
+                                <td>30</td>
+                                <td>4580</td>
+                                <td>1145</td>
+                                <td>1,13</td>
+                                <td>EV080-3E90L/4D</td>
+                                <td>3,38</td>
+                                <td>24,6</td>
+                            </tr>
+                            <tr>
+                                <td>1,5</td>
+                                <td>55</td>
+                                <td>204</td>
+                                <td>26,5</td>
+                                <td>4620</td>
+                                <td>1155</td>
+                                <td>1,1</td>
+                                <td>EV080-3E90L/4D</td>
+                                <td>3,38</td>
+                                <td>24,6</td>
+                            </tr>
+                            <tr>
+                                <td>1,5</td>
+                                <td>48</td>
+                                <td>225</td>
+                                <td>30</td>
+                                <td>7080</td>
+                                <td>1770</td>
+                                <td>2,2</td>
+                                <td>EV080-3E90L/4D</td>
+                                <td>3,38</td>
+                                <td>45,3</td>
+                            </tr>
+                            <tr>
+                                <td>1,5</td>
+                                <td>56</td>
+                                <td>213</td>
+                                <td>26</td>
+                                <td>6960</td>
+                                <td>1740</td>
+                                <td>2</td>
+                                <td>EV080-3E90L/4D</td>
+                                <td>3,38</td>
+                                <td>45,3</td>
+                            </tr>
+                            <tr>
+                                <td>1,5</td>
+                                <td>56</td>
+                                <td>213</td>
+                                <td>26</td>
+                                <td>6960</td>
+                                <td>1740</td>
+                                <td>2</td>
+                                <td>EV080-3E90L/4D</td>
+                                <td>3,38</td>
+                                <td>45,3</td>
+                            </tr>
+                            <tr>
+                                <td>1,5</td>
+                                <td>56</td>
+                                <td>213</td>
+                                <td>26</td>
+                                <td>6960</td>
+                                <td>1740</td>
+                                <td>2</td>
+                                <td>EV080-3E90L/4D</td>
+                                <td>3,38</td>
+                                <td>45,3</td>
+                            </tr>
+                            <tr>
+                                <td>1,5</td>
+                                <td>56</td>
+                                <td>213</td>
+                                <td>26</td>
+                                <td>6960</td>
+                                <td>1740</td>
+                                <td>2</td>
+                                <td>EV080-3E90L/4D</td>
+                                <td>3,38</td>
+                                <td>45,3</td>
+                            </tr>
+                            <tr>
+                                <td>1,5</td>
+                                <td>56</td>
+                                <td>213</td>
+                                <td>26</td>
+                                <td>6960</td>
+                                <td>1740</td>
+                                <td>2</td>
+                                <td>EV080-3E90L/4D</td>
+                                <td>3,38</td>
+                                <td>45,3</td>
+                            </tr>
+                            <tr>
+                                <td>1,5</td>
+                                <td>56</td>
+                                <td>213</td>
+                                <td>26</td>
+                                <td>6960</td>
+                                <td>1740</td>
+                                <td>2</td>
+                                <td>EV080-3E90L/4D</td>
+                                <td>3,38</td>
+                                <td>45,3</td>
+                            </tr>
+                            <tr>
+                                <td>1,5</td>
+                                <td>56</td>
+                                <td>213</td>
+                                <td>26</td>
+                                <td>6960</td>
+                                <td>1740</td>
+                                <td>2</td>
+                                <td>EV080-3E90L/4D</td>
+                                <td>3,38</td>
+                                <td>45,3</td>
+                            </tr>
+                            <tr>
+                                <td>1,5</td>
+                                <td>56</td>
+                                <td>213</td>
+                                <td>26</td>
+                                <td>6960</td>
+                                <td>1740</td>
+                                <td>2</td>
+                                <td>EV080-3E90L/4D</td>
+                                <td>3,38</td>
+                                <td>45,3</td>
+                            </tr>
+                            <!-- İhtiyacınıza göre daha fazla satır ve sütun ekleyebilirsiniz -->
+                        </table>
+                    </div>
+
+                </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
+
+@code {
+    bool dikkateAlmaSelected = true;
+    bool rdylyukSelected = true;
+    bool eksnlyukSelected = false;
+
+    string ortaGenelDisplayStyle => dikkateAlmaSelected ? "display:none;" : "display:block;";
+
+    void ToggleDivDisplay(bool selected)
+    {
+        dikkateAlmaSelected = selected;
+    }
+
+    void ToggleRadios(bool isRdylyukSelected)
+    {
+        rdylyukSelected = isRdylyukSelected;
+        eksnlyukSelected = !isRdylyukSelected;
+    }
+}

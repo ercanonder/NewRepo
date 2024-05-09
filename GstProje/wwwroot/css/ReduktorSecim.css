@@ -1,0 +1,127 @@
+﻿#box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 1%;
+}
+
+.container {
+    display: flex; /* Container'ı yatay olarak hizalamak için */
+    justify-content: center; /* Container'ı yatay olarak ortalamak için */
+    align-items: center; /* Container'ı dikey olarak ortalamak için */
+    height: 100%;
+    width: 100%;
+}
+
+
+#box4 {
+    background-color: #ffffff;
+    width: 80%; /* Çerçevenin genişliği */
+    height: 85%; /* Çerçevenin yüksekliği */
+    border: 2px solid #BE1C7F; /* Çerçeve rengi ve kalınlığı */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Sayfanın ortasına hizalamak için */
+    margin-top: 2%; /* İstenen boşluk */
+    overflow:auto;
+}
+#box4::-webkit-scrollbar {
+    width: 9px;
+}
+
+    #box4::-webkit-scrollbar-thumb {
+        background-color: #666;
+        border-radius: 10px;
+    }
+
+        #box4::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+
+    #box4::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 10px;
+    }
+
+.alt1 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.alt2 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prt {
+    background-color: #D9D9D9;
+    border: 2px solid #BE1C7F;
+    border-radius: 20px;
+    /*margin: 5px;*/
+    height: 140px;
+    width: 150px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.mn {
+    max-width: 150px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.aciklama {
+    /*text-align: center;*/
+    font-size: 18px;
+    font-style: italic; /* İtalik stil */
+    font-weight: bold; /* Kalın stil */
+}
+
+.aciklama2 {
+    /*text-align: center;*/
+    font-size: 12px;
+}
+
+.alt3 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.alt4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.crt {
+    background-color: #D9D9D9;
+    border: 2px solid #BE1C7F;
+    border-radius: 20px;
+    text-align: center;
+    height: 140px;
+    width: 150px;
+    margin-left: 20px;
+}
+
+.aciklama3 {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.aciklama4 {
+    text-align: center;
+    font-size: 12px;
+}

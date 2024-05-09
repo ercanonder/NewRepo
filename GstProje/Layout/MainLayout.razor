@@ -1,0 +1,166 @@
+﻿@inherits LayoutComponentBase
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/css/MainLayout.css" />
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+    }
+</style>
+<body>
+    <div style="height:100vh;width:100%;">
+        <div style="height:140%;width:100%;">
+            <div style="height:10%;width:100%;">
+                <div class="box" id="box1">
+                    <div class="inner-box" id="inner-box1">
+                        <img class="logo" id="inner_box1_logo" src="/css/images/logo.png" />
+                    </div>
+                    <div class="inner-box" id="inner-box2">
+                        <a href="#" class="urun">Ürünler</a>
+                    </div>
+                    <div class="inner-box" id="inner-box3">
+                        <a href="#" class="cozum">Çözümler</a>
+                    </div>
+                    <div class="inner-box" id="inner-box4">
+                        <a href="#" class="satis">Satış Servisi</a>
+                    </div>
+                    <div class="inner-box" id="inner-box5">
+                        <a href="#" class="dokuman">Döküman</a>
+                    </div>
+                    <div class="inner-box" id="inner-box6">
+                        <a href="#" class="kydSecim">Kaydedilen Seçimler</a>
+                    </div>
+                    <div class="inner-box" id="inner-box7">
+                        <a href="#" class="iletisim">İletişim</a>
+                    </div>
+                    <div class="inner-box8" id="inner-box8">
+                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <select id="dilSecim">
+                            <option selected="selected" value="tr"> TR</option>
+                            <option value="en"> EN</option>
+                            <option value="de"> DE</option>
+                            <option value="fr"> FR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div style="height:80%;width:100%;">
+                @Body
+            </div>
+            <div class="footer">
+                <div class="footer-top">
+                    <div class="footer-top-column1">
+                        <div>
+                            <span style="color:#be057e;font-size:25px;font-weight:bold;">Bizi Takip Edin</span>
+                        </div>
+                        <div style="margin-top:20px;">
+                            <span style="color:#63656a;font-size:18px;">
+                                Güncel haberler için bizi sosyal medya hesaplarımızdan takip edin.
+                            </span>
+                        </div>
+                        <div style="display:flex;align-items:center;justify-content:start;margin-top:20px;">
+                            <a href="https://www.instagram.com/yilmazreduktor" style=""><i class="fab fa-instagram fa-2x" style="color:#63656a;margin:10px;"></i></a>
+                            <a href="https://linkedin.com/company/yilmaz-reduktor-as" style=""><i class="fab fa-linkedin-in fa-2x" style="color:#63656a;margin:10px;"></i></a>
+                            <a href="https://facebook.com/yilmazreduktor/" style=""><i class="fab fa-facebook-f fa-2x" style="color:#63656a;margin:10px;"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-top-column2">
+                        <div>
+                            <span style="color:#be057e;font-size:25px;font-weight:bold;">Bizimle İletişime Geçin</span>
+                        </div>
+                        <div style="margin-top:10px;">
+                            <span style="color:#be057e;font-size: 1.2rem;font-weight:100;">Yılmaz Redüktör</span>
+                        </div>
+                        <div style="display:flex;margin-top:30px;">
+                            <div><i class="fas fa-map-marked-alt fa-2x" style="color: #63656a;"></i></div>
+                            <div style="display:flex;flex-direction:column;margin-left:20px;"><span style="color:#63656a;">Atatürk Mah. Lozan Cad. No:17 34522</span><span style="color:#63656a;">Esenyurt - İstanbul - Türkiye</span></div>
+                        </div>
+                        <div style="display:flex;margin-top:30px;">
+                            <div><i class="fas fa-phone-alt fa-2x" style="color: #63656a;"></i></div>
+                            <div style="display:flex;flex-direction:column;margin-left:20px;"><span style="color:#63656a;">( 8 Hat )</span><span style="color:#63656a;">+90 212 886 90 00</span></div>
+                        </div>
+                        <div style="display:flex;margin-top:30px;">
+                            <div><i class="fas fa-envelope fa-2x" style="color: #63656a;"></i></div>
+                            <div style="display:flex;flex-direction:column;margin-left:20px;"><span style="color:#63656a;">yilmaz@yr.com.tr</span></div>
+                        </div>
+                    </div>
+                    <div class="footer-top-column3">
+                        <div>
+                            <span style="color:#be057e;font-size:25px;font-weight:bold;">Yurtdışı Bayilerimiz</span>
+                        </div>
+                        <div style="margin-top:15px;">
+                            <select name="one" class="dropdown-select">
+                                <option value="{&quot;label&quot;:&quot;Almanya&quot;,&quot;value&quot;:&quot;COUNTRY-GERMANY&quot;}">Almanya</option>
+                                <option value="{&quot;label&quot;:&quot;Bulgaristan&quot;,&quot;value&quot;:&quot;COUNTRY-BULGARIA&quot;}">Bulgaristan</option>
+                                <option value="{&quot;label&quot;:&quot;Çekya&quot;,&quot;value&quot;:&quot;COUNTRY-CZEC&quot;}">Çekya</option>
+                                <option value="{&quot;label&quot;:&quot;Fransa&quot;,&quot;value&quot;:&quot;COUNTRY-FRANCE&quot;}">Fransa</option>
+                                <option value="{&quot;label&quot;:&quot;Güney Kore&quot;,&quot;value&quot;:&quot;COUNTRY-SOUTHKOREA&quot;}">Güney Kore</option>
+                                <option value="{&quot;label&quot;:&quot;Hırvatistan&quot;,&quot;value&quot;:&quot;COUNTRY-CROATIA&quot;}">Hırvatistan</option>
+                                <option value="{&quot;label&quot;:&quot;Hollanda&quot;,&quot;value&quot;:&quot;COUNTRY-NETHERLANDS&quot;}">Hollanda</option>
+                                <option value="{&quot;label&quot;:&quot;Irak&quot;,&quot;value&quot;:&quot;COUNTRY-IRAQ&quot;}">Irak</option>
+                                <option value="{&quot;label&quot;:&quot;İngiltere&quot;,&quot;value&quot;:&quot;COUNTRY-ENGLAND&quot;}">İngiltere</option>
+                                <option value="{&quot;label&quot;:&quot;İspanya&quot;,&quot;value&quot;:&quot;COUNTRY-SPAIN&quot;}">İspanya</option>
+                                <option value="{&quot;label&quot;:&quot;İsrail&quot;,&quot;value&quot;:&quot;COUNTRY-ISRAEL&quot;}">İsrail</option>
+                                <option value="{&quot;label&quot;:&quot;Kazakistan&quot;,&quot;value&quot;:&quot;COUNTRY-KAZAKHSTAN&quot;}">Kazakistan</option>
+                                <option value="{&quot;label&quot;:&quot;Mısır&quot;,&quot;value&quot;:&quot;COUNTRY-EGYPT&quot;}">Mısır</option>
+                                <option value="{&quot;label&quot;:&quot;Özbekistan&quot;,&quot;value&quot;:&quot;COUNTRY-UZBEKISTAN&quot;}">Özbekistan</option>
+                                <option value="{&quot;label&quot;:&quot;Romanya&quot;,&quot;value&quot;:&quot;COUNTRY-ROMANIA&quot;}">Romanya</option>
+                                <option value="{&quot;label&quot;:&quot;Rusya&quot;,&quot;value&quot;:&quot;COUNTRY-RUSSIA&quot;}">Rusya</option>
+                                <option value="{&quot;label&quot;:&quot;Slovakya&quot;,&quot;value&quot;:&quot;COUNTRY-SLOVAKIA&quot;}">Slovakya</option>
+                                <option value="{&quot;label&quot;:&quot;Tayland&quot;,&quot;value&quot;:&quot;COUNTRY-THAILAND&quot;}">Tayland</option>
+                                <option value="{&quot;label&quot;:&quot;Türkiye&quot;,&quot;value&quot;:&quot;COUNTRY-TURKEY&quot;}">Türkiye</option>
+                                <option value="{&quot;label&quot;:&quot;Türkmenistan&quot;,&quot;value&quot;:&quot;COUNTRY-TURKMENISTAN&quot;}">Türkmenistan</option>
+                                <option value="{&quot;label&quot;:&quot;Ukranya&quot;,&quot;value&quot;:&quot;COUNTRY-UKRAINE&quot;}">Ukranya</option>
+                                <option value="{&quot;label&quot;:&quot;Yunanistan&quot;,&quot;value&quot;:&quot;COUNTRY-GREECE&quot;}">Yunanistan</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="footer-top-button" onclick="window.location.href='https://www.yr.com.tr/satis-ve-servisler'">Listele</button>
+                        </div>
+                        <div style="margin-top:5px;">
+                            <span style="color:#be057e;font-size:25px;font-weight:bold;">Yurtiçi Bayilerimiz</span>
+                        </div>
+                        <div style="margin-top:5px;">
+                            <select name="one" class="dropdown-select">
+                                <option value="İstanbul">İstanbul</option>
+                                <option value="Ankara">Ankara</option>
+                                <option value="İzmir">İzmir</option>
+                                <option value="Bursa">Bursa</option>
+                                <option value="Sakarya">Sakarya</option>
+                                <option value="Konya">Konya</option>
+                                <option value="Eskişehir">Eskişehir</option>
+                                <option value="Kocaeli">Kocaeli</option>
+                                <option value="Kayseri">Kayseri</option>
+                                <option value="Denizli">Denizli</option>
+                                <option value="Çorum">Çorum</option>
+                                <option value="Gaziantep">Gaziantep</option>
+                                <option value="Rize">Rize</option>
+                                <option value="Adana">Adana</option>
+                                <option value="Tekirdağ">Tekirdağ</option>
+                                <option value="Hatay">Hatay</option>
+                                <option value="Diyarbakır">Diyarbakır</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="footer-top-button" onclick="window.location.href='https://www.yr.com.tr/satis-ve-servisler'">Listele</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bot">
+                    <div class="footer-bot-container">
+                        <img src="/css/images/YR-LOGO.jpg" class="footer-bot-container-img" />
+                        <ul class="footer-kvkk-list">
+                            <li> <a href="https://www.yr.com.tr/kvkk/kvkk-politika.pdf">Kişisel Verilerin Korunması</a></li>
+                            <li> <a href="https://www.yr.com.tr/kvkk/gizlilik-politikasi.pdf">Gizlilik Politikası</a></li>
+                            <li> <a href="https://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/13662">Bilgi Toplumu Hizmetleri</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

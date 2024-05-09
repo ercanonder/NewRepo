@@ -1,0 +1,146 @@
+﻿@page "/FormC"
+<link rel="stylesheet" href="/css/Form-C.css" />
+<body>
+    <div class="container">
+        <div class="container-column">
+            <div style="display:flex;justify-content:center;align-items:center;width:80%;margin-left:10%;">
+                <span style="font-size:20px;padding:8px;">Redüktör Seçim Programı</span>
+            </div>
+            <div style="display:flex;justify-content:center;align-items:center;width:80%;margin-left:10%;">
+                <button class="column-top-button1" style="border-right: 1px solid #AC1878;border-left: 1px solid #AC1878;">
+                    1
+                </button>
+                <button class="column-top-button2" style="border-right: 1px solid #AC1878;  border-left: none;">2</button>
+                <button class="column-top-button3" style="border-right: 1px solid #AC1878; border-left: none;">3</button>
+                <button class="column-top-button4" style="border-right: 1px solid #AC1878; border-left: none;">4</button>
+                <button class="column-top-button5" style="border-right: 1px solid #AC1878; border-left: none;">5</button>
+            </div>
+            <div class="container-column1">
+                <div class="column-bot">
+                    <div style="width:30%;margin:20px;">
+                        <div style="width:100%;padding:5px;background-color:#cccccc;border-radius:8px;">
+                            <span style="font-size:16px;font-weight:bold;">Opsiyonlar</span>
+                        </div>
+                        <div>
+                            <div style="width:100%;border:1px solid #AC1878;border-radius:4px;margin-top:8px;padding:5px;display:flex;justify-content:space-between;">
+                                <span style="font-weight:bold;">Motor Opsiyonları</span>
+                                <span style="font-weight:bold;color:#AC1878">▼</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <span style="color:#AC1878; cursor:pointer" @onclick="altbaslikac">@icerik1icon</span>
+                                <span class="basliklar" style="cursor:pointer" @onclick="altbaslikac">Termik Koruma Opsiyonu</span>
+                            </div>
+                            <div style="margin-left:30px;display:@icerik1;flex-direction:column;">
+                                <div><input type="radio" /><span>Yok</span></div>
+                                <div><input type="radio" /><span>3PTC(F)</span></div>
+                            </div>
+
+                            <div>
+                                <span style="color:#AC1878">➤</span>
+                                <span class="basliklar">Koruma Sınıfı Opsiyonu</span>
+                            </div>
+                            <div>
+                                <span style="color:#AC1878">➤</span>
+                                <span class="basliklar">Yalıtım Sınıfı Opsiyonu</span>
+                            </div>
+                            <div>
+                                <span style="color:#AC1878">➤</span>
+                                <span class="basliklar">Endoker</span>
+                            </div>
+                            <div>
+                                <span style="color:#AC1878">➤</span>
+                                <span class="basliklar">Cebri Fan Opsiyonu</span>
+                            </div>
+                            <div>
+                                <span style="color:#AC1878">➤</span>
+                                <span class="basliklar">Motor Arkası Kilit Opsiyonu</span>
+                            </div>
+                            <div>
+                                <span style="color:#AC1878">➤</span>
+                                <span class="basliklar">Fren Opsiyonu</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="width:100%;border:1px solid #AC1878;border-radius:4px;margin-top:8px;padding:5px;display:flex;justify-content:space-between;">
+                                <span style="font-weight:bold;">Redüktör Opsiyonları</span>
+                                <span style="font-weight:bold;color:#AC1878">▼</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <span style="color:#AC1878">➤</span>
+                                <span class="basliklar">Renk</span>
+                            </div>
+                            <div>
+                                <span style="color:#AC1878">➤</span>
+                                <span class="basliklar">Yağ Cinsi</span>
+                            </div>
+                            <div>
+                                <span style="color:#AC1878">➤</span>
+                                <span class="basliklar">Tork Kolu</span>
+                            </div>
+                            <div>
+                                <span style="color:#AC1878">➤</span>
+                                <span class="basliklar">Boya Tipi</span>
+                            </div>
+                            <div>
+                                <span style="color:#AC1878">➤</span>
+                                <span class="basliklar">Delik Mil Opsiyonu</span>
+                            </div>
+                            <div>
+                                <span style="color:#AC1878">➤</span>
+                                <span class="basliklar">Mil Koruma Kapağı</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width:30%;margin:20px;">
+                        <div style="width:100%;padding:5px;background-color:#cccccc;border-radius:8px;">
+                            <span style="font-size:16px;font-weight:bold;">Opsiyon Açıklamalar</span>
+                        </div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div style="width:30%;margin:20px;">
+                        <div style="width:100%;padding:5px;background-color:#cccccc;border-radius:8px;">
+                            <span style="font-size:16px;font-weight:bold;">Seçilen Opsiyonlar (Fiyat farkı vardır)</span>
+                        </div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="padding:10px;display:flex;align-items:center;justify-content:space-between;width:80%;margin-left:10%;">
+                <div>
+                    <span style="font-size:20px;font-weight:bold;cursor:pointer;color:#AC1878;">🢀</span>
+                    <span style="font-size:20px;font-weight:bold;cursor:pointer;">Geri</span>
+                </div>
+                <div>
+                    <span style="font-size:20px;font-weight:bold;cursor:pointer;">İleri</span>
+                    <span style="font-size:20px;font-weight:bold;cursor:pointer;color:#AC1878">🢂</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+@code {
+    private string icerik1 = "none";
+    private string icerik1icon = "➤";
+    private void altbaslikac()
+    {
+        if (icerik1 == "none")
+        {
+            icerik1 = "flex";
+            icerik1icon = "▼";
+        }
+        else if (icerik1 == "flex")
+        {
+            icerik1 = "none";
+            icerik1icon = "➤";
+        }
+    }
+}

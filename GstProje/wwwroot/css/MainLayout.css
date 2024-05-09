@@ -1,0 +1,300 @@
+﻿#box1 {
+    background-color: #1A2229;
+    color: white;
+    height: 128px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#inner-box1 {
+    width: 112px; /* İç kutunun genişliği */
+    height: 99px; /* İç kutunun yüksekliği */
+    margin-top: 14px;
+    /*margin-left:208px;*/
+    background-color: transparent; /* İç kutunun arka plan rengi */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 80%;
+}
+
+#inner-box2 {
+    width: 72px; /* İç kutunun genişliği */
+    height: 22px; /* İç kutunun yüksekliği */
+}
+
+.urun {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+    .urun:hover {
+        color: #BE1C7F
+    }
+
+#inner-box3 {
+    width: 91px; /* İç kutunun genişliği */
+    height: 22px; /* İç kutunun yüksekliği */
+}
+
+.cozum {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+    .cozum:hover {
+        color: #BE1C7F
+    }
+
+#inner-box4 {
+    width: 108px; /* İç kutunun genişliği */
+    height: 22px; /* İç kutunun yüksekliği */
+}
+
+.satis {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+    .satis:hover {
+        color: #BE1C7F
+    }
+
+#inner-box5 {
+    width: 94px; /* İç kutunun genişliği */
+    height: 22px; /* İç kutunun yüksekliği */
+}
+
+.dokuman {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+    .dokuman:hover {
+        color: #BE1C7F
+    }
+
+#inner-box6 {
+    width: 108px; /* İç kutunun genişliği */
+    height: 44px; /* İç kutunun yüksekliği */
+}
+
+.kydSecim {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+    .kydSecim:hover {
+        color: #BE1C7F
+    }
+
+#inner-box7 {
+    width: 70px; /* İç kutunun genişliği */
+    height: 22px; /* İç kutunun yüksekliği */
+}
+
+.iletisim {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+    .iletisim:hover {
+        color: #BE1C7F
+    }
+
+#inner-box8 {
+    width: 90px; /* İç kutunun genişliği */
+    height: 28px; /* İç kutunun yüksekliği */
+}
+
+#dilSecim {
+    background-color: #1A2229;
+    color: white;
+    border: none;
+}
+
+
+/*///////////////// FOOTER - CSS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+.footer {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+}
+
+.footer-top {
+    padding: 6px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-top-column1,
+.footer-top-column2,
+.footer-top-column3 {
+    width: 20%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top-button {
+    background-color: #63656a;
+    color: rgb(255, 255, 255);
+    padding: 1em 3.5em;
+    /* border-radius: 30px; */
+    margin-top: 2em;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+    .footer-top-button:hover {
+        background-color: #be057e;
+        color: white;
+    }
+
+.dropdown-select {
+    width: 50%;
+    height: 100%;
+    border: 2px solid #63656a;
+    color: #63656a;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer-bot {
+    padding: 4px;
+    width: 100%;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bot-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bot-container-img {
+    max-width: 6%;
+    max-height: 60%;
+}
+
+.footer-kvkk-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    height: inherit;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .footer-kvkk-list a {
+        text-decoration: none;
+        list-style: none;
+        color: #63656a;
+    }
+
+        .footer-kvkk-list a:hover {
+            color: #be057e;
+        }
+
+    .footer-kvkk-list li {
+        margin: 10px;
+    }
+
+@media (max-width: 1024px) {
+    .footer-top {
+        padding: 6px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-top-column3 {
+        width: 30%;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-bot-container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-bot-container-img {
+        max-width: 10%;
+        max-height: 80%;
+        margin-left: 45%;
+        margin-top: 2%;
+    }
+}
+
+@media (max-width: 990px) {
+    .footer-top {
+        display: grid;
+        grid-template-columns: 30% 40%;
+        grid-template-rows: 40%, 40%;
+    }
+
+    .footer-top-column1 {
+        width: 120%;
+        margin-left: 20%;
+    }
+
+    .footer-top-column2 {
+        width: 100%;
+        margin-left: -20%;
+    }
+
+    .footer-top-column3 {
+        width: 100%;
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 754px) {
+    .footer-top {
+        display: block;
+    }
+
+    /*.footer-top-column1 {
+        width: 100%;
+        margin-left: 20%;
+    }*/
+
+    .footer-top-column2 {
+        margin-left: 20%;
+    }
+
+    /* .footer-top-column3 {
+        width: 100%;
+        margin-left: 20%;
+    }*/
+}

@@ -1,0 +1,57 @@
+﻿
+.alt {
+    width: 98%;
+    height: 100%;
+    background-color: #FFFFFF;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.table-container {
+    height: 100%;
+    /*overflow: auto;*/
+}
+    .table-container::-webkit-scrollbar {
+        width: 9px;
+    }
+
+    .table-container::-webkit-scrollbar-thumb {
+        background-color: #666;
+        border-radius: 10px;
+    }
+
+        .table-container::-webkit-scrollbar-thumb:hover {
+            background-color: #555;
+        }
+
+    .table-container::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 10px;
+    }
+
+table {
+    width: calc(100% - 4px); /* Çerçeveler arasında 2px'lik boşluklar olduğu için genişliği ayarlayın */
+    border-collapse: collapse;
+    margin: 0 auto; /* Tabloyu yatayda ortala */
+}
+th {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border: 8px solid #fff;
+    border-radius:20px;
+    margin: 0 2px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+tr:first-child th {
+    background-color: #D9D9D9; /* Başlık satırının arka plan rengi */
+}
+
+td {
+    text-align: center;
+    border-bottom: 2px solid #BE1C7F;
+    padding: 18px;
+    font-size: 14px;
+}
+
+

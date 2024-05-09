@@ -1,0 +1,488 @@
+﻿.container2 {
+    height: 100%;
+    width: 100%;
+}
+
+.üst {
+    display: flex; /* Container'ı yatay olarak hizalamak için */
+    justify-content: center; /*Container'ı yatay olarak ortalamak için */
+    align-items: center; /*Container'ı dikey olarak ortalamak için */
+    width: 100%;
+    height: 60%;
+    background-color: #FFFFFF;
+}
+
+.forma-sol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    /*border: 2px solid #ff0000;*/
+}
+
+.sol-ic-bir {
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    font-size: 10px;
+    text-align: right;
+    font-family: Century;
+}
+
+.sol-ic-iki {
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    font-size: 12px;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.reduktor_tip {
+    /* Tarayıcı tarafından sağlanan varsayılan görünümü geçersiz kıl */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Arka plan rengini belirle */
+    background-color: #E8E8E8;
+    /* Combobox'ın kenarlık rengini belirle */
+    border: none;
+    /* Combobox'ın genişliğini belirle */
+    width: 85%; /* Örnek genişlik */
+    /* Combobox'ın yüksekliğini belirle */
+    height: 35px; /* Örnek yükseklik */
+    /* Combobox'ta bir polygon simgesi kullan */
+    background-image: url('../css/images/Polygon 2.png');
+    /* Simgeyi sağa hizala */
+    background-position: right center;
+    /* Simgeyi yinelenmeyi önle */
+    background-repeat: no-repeat;
+    /* Simgeyi içeriye yerleştir */
+    padding-right: 20px; /* Simge genişliği kadar içeriye yerleştir */
+    /* Combobox'ın seçeneklerinin fontunu ayarla */
+    font-family: Arial, sans-serif; /* Örnek bir font */
+    /* Combobox'ın seçeneklerinin yazı tipini ayarla */
+    font-size: 14px; /* Örnek bir yazı tipi boyutu */
+    /* Combobox'ın seçeneklerinin stilini ayarla */
+    color: black; /* Örnek bir renk */
+    padding-left: 4%;
+    
+}
+
+.gerilim {
+    /* Tarayıcı tarafından sağlanan varsayılan görünümü geçersiz kıl */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Arka plan rengini belirle */
+    background-color: #E8E8E8;
+    /* Combobox'ın kenarlık rengini belirle */
+    border: none;
+    /* Combobox'ın genişliğini belirle */
+    width: 85%; /* Örnek genişlik */
+    /* Combobox'ın yüksekliğini belirle */
+    height: 35px; /* Örnek yükseklik */
+    /* Combobox'ta bir polygon simgesi kullan */
+    background-image: url('../css/images/Polygon 2.png');
+    /* Simgeyi sağa hizala */
+    background-position: right center;
+    /* Simgeyi yinelenmeyi önle */
+    background-repeat: no-repeat;
+    /* Simgeyi içeriye yerleştir */
+    padding-right: 20px; /* Simge genişliği kadar içeriye yerleştir */
+    /* Combobox'ın seçeneklerinin fontunu ayarla */
+    font-family: Arial, sans-serif; /* Örnek bir font */
+    /* Combobox'ın seçeneklerinin yazı tipini ayarla */
+    font-size: 14px; /* Örnek bir yazı tipi boyutu */
+    /* Combobox'ın seçeneklerinin stilini ayarla */
+    color: black; /* Örnek bir renk */
+    padding-left: 4%;
+}
+
+.bosAlan {
+    /* Arka plan rengini belirle */
+    background-color: #E8E8E8;
+    /* Combobox'ın genişliğini belirle */
+    width: 85%; /* Örnek genişlik */
+    /* Combobox'ın yüksekliğini belirle */
+    height: 28%; /* Örnek yükseklik */
+    /* Combobox'ta bir polygon simgesi kullan */
+    /*border: 2px solid #ff0000;*/
+    margin-top: 2.5%;
+    display: flex;
+}
+
+.alanbir {
+    width: 20%;
+    height: 33%;
+}
+
+    .alanbir input[type="radio"] {
+        display: none; /* Görünmez radio düğmesi */
+    }
+
+    .alanbir label {
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 1%; /* Radio düğmesinden sonra biraz boşluk bırakmak için */
+        font-size: 14px;
+    }
+
+    /* Radio düğmesi seçildiğinde içi dolu görünüm */
+    .alanbir input[type="radio"] + label:before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px; /* İsteğe bağlı: Etiketle arasında boşluk bırakmak için */
+        border: none;
+        background-color: #BAB5B5; /* Çerçeve rengi */
+        border-radius: 50%; /* Dairesel şekil oluşturmak için */
+        vertical-align: middle; /* Dikey hizalama */
+    }
+
+    /* Radio düğmesi seçildiğinde içi dolu görünüm */
+    .alanbir input[type="radio"]:checked + label:before {
+        background-color: #BE1C7F; /* Dolgu rengini belirle */
+    }
+
+.alanuc {
+    width: 25%;
+    height: 97%;
+    text-align: right;
+}
+
+    .alanuc input[type="radio"] {
+        display: none; /* Görünmez radio düğmesi */
+    }
+
+    .alanuc label {
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 1%; /* Radio düğmesinden sonra biraz boşluk bırakmak için */
+        font-size: 14px;
+        padding-right: 2%;
+    }
+
+    .alanuc input[type="radio"] + label:before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px; /* İsteğe bağlı: Etiketle arasında boşluk bırakmak için */
+        border: none;
+        background-color: #BAB5B5; /* Çerçeve rengi */
+        border-radius: 50%; /* Dairesel şekil oluşturmak için */
+        vertical-align: middle; /* Dikey hizalama */
+    }
+
+    .alanuc input[type="radio"]:checked + label:before {
+        background-color: #BE1C7F; /* Dolgu rengini belirle */
+    }
+
+    .alanuc input[type="text"] {
+        vertical-align: middle; /* Dikey hizalama */
+        width: 25%;
+        height: 15%;
+        padding: 1%;
+        padding-left: 8%;
+        border: 1px solid black; /* Çerçeve rengi ve kalınlığını belirler */
+        border-radius: 13%; /* TextBox'in köşelerini yuvarlar */
+        background-color: #D9D9D9;
+    }
+
+.alandört {
+    width: 25%;
+    height: 97%;
+    /*border: 2px solid #ff0000;*/
+    vertical-align: middle;
+}
+
+.range {
+    display: flex;
+}
+
+    .range input[type="text"] {
+        background-color: transparent;
+        width: 25%;
+        height: 25%;
+        border: none;
+        padding-top: 3%;
+        padding-left: 5%;
+        font-size: 14px;
+        color: black;
+        padding-right: 5%;
+    }
+
+    .range input[type="range"] {
+        -webkit-appearance: none; /* Tarayıcı varsayılanı geçersiz kıl */
+        appearance: none;
+        width: 70%; /* Slider'ın genişliği */
+        height: 10px; /* Slider'ın yüksekliği */
+        background: #d3d3d3; /* Arka plan rengi */
+        outline: 2px solid #BE1C7F; /* Kenarlık vurgusunu kaldır */
+        opacity: 0.7; /* Opaklık */
+        transition: opacity 0.2s; /* Geçiş efekti */
+        border-radius: 5px; /* Köşe yuvarlama */
+        margin-top: 5px; /* Slider'ın üstündeki boşluk */
+    }
+
+        .range input[type="range"]:hover {
+            opacity: 1; /* Slider'a fare hoversa opaklığı tam yap */
+        }
+
+        .range input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none; /* Tarayıcı varsayılanı geçersiz kıl */
+            appearance: none;
+            width: 10px; /* Başlık genişliği */
+            height: 18px; /* Başlık yüksekliği */
+            /*border-radius: 50%;*/ /* Başlık köşe yuvarlama */
+            background: #BE1C7F; /* Başlık arka plan rengi */
+            cursor: pointer; /* İmleç tipi */
+        }
+
+/*.range input[type="range"]::-moz-range-thumb {
+            width: 10px;*/ /* Başlık genişliği */
+/*height: 20px;*/ /* Başlık yüksekliği */
+/*border-radius: 50%;*/ /* Başlık köşe yuvarlama */
+/*background: #007bff;*/ /* Başlık arka plan rengi */
+/*cursor: pointer;*/ /* İmleç tipi */
+/*}*/
+
+.range_iki {
+    display: flex;
+    margin-top: 10%;
+}
+
+    .range_iki input[type="text"] {
+        background-color: transparent;
+        width: 25%;
+        height: 25%;
+        border: none;
+        padding-top: 3%;
+        padding-left: 5%;
+        font-size: 14px;
+        color: black;
+        padding-right: 5%;
+    }
+
+    .range_iki input[type="range"] {
+        -webkit-appearance: none; /* Tarayıcı varsayılanı geçersiz kıl */
+        appearance: none;
+        width: 70%; /* Slider'ın genişliği */
+        height: 10px; /* Slider'ın yüksekliği */
+        background: #d3d3d3; /* Arka plan rengi */
+        outline: 2px solid #BE1C7F; /* Kenarlık vurgusunu kaldır */
+        opacity: 0.7; /* Opaklık */
+        transition: opacity 0.2s; /* Geçiş efekti */
+        border-radius: 5px; /* Köşe yuvarlama */
+        margin-top: 5px; /* Slider'ın üstündeki boşluk */
+    }
+
+        .range_iki input[type="range"]:hover {
+            opacity: 1; /* Slider'a fare hoversa opaklığı tam yap */
+        }
+
+        .range_iki input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none; /* Tarayıcı varsayılanı geçersiz kıl */
+            appearance: none;
+            width: 10px; /* Başlık genişliği */
+            height: 18px; /* Başlık yüksekliği */
+            /*border-radius: 50%;*/ /* Başlık köşe yuvarlama */
+            background: #BE1C7F; /* Başlık arka plan rengi */
+            cursor: pointer; /* İmleç tipi */
+        }
+
+/*.range_iki input[type="range"]::-moz-range-thumb {
+            width: 10px;*/ /* Başlık genişliği */
+/*height: 20px;*/ /* Başlık yüksekliği */
+/*border-radius: 50%;*/ /* Başlık köşe yuvarlama */
+/*background: #007bff;*/ /* Başlık arka plan rengi */
+/*cursor: pointer;*/ /* İmleç tipi */
+/*}*/
+
+.motorverim {
+    width: 85%;
+}
+
+.motorverimsag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+    background-color: #FFFFFF;
+}
+
+    .motorverimsag input[type="radio"] {
+        display: none; /* Görünmez radio düğmesi */
+    }
+
+    .motorverimsag label {
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 1%; /* Radio düğmesinden sonra biraz boşluk bırakmak için */
+        font-size: 14px;
+    }
+    .motorverimsag input[type="radio"] + label {
+        margin-right: 20px; /* İlk grupla ikinci grup arasındaki boşluk */
+    }
+    /* Radio düğmesi seçildiğinde içi dolu görünüm */
+    .motorverimsag input[type="radio"] + label:before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px; /* İsteğe bağlı: Etiketle arasında boşluk bırakmak için */
+        border: none;
+        background-color: #BAB5B5; /* Çerçeve rengi */
+        border-radius: 50%; /* Dairesel şekil oluşturmak için */
+        vertical-align: middle; /* Dikey hizalama */
+    }
+    /* Radio düğmesi seçildiğinde içi dolu görünüm */
+    .motorverimsag input[type="radio"]:checked + label:before {
+        background-color: #BE1C7F; /* Dolgu rengini belirle */
+    }
+
+.horizontal-line {
+    border: none;
+    height: 2px; /* Çizgi kalınlığı */
+    background-color: #BE1C7F; /* veya istediğiniz renk */
+    margin-top: 5px; /* İsteğe bağlı: Çizginin üstündeki boşluk */
+    margin-bottom: 5px; /* İsteğe bağlı: Çizginin altındaki boşluk */
+    width: 100%; /* Çizginin genişliği */
+}
+
+.cikis_kuvvetleri {
+    width: 85%;
+    margin-top: 10px;
+    
+}
+
+.kuvvet_radio {
+    display: flex;
+    justify-content: flex-start; /* Radio butonları sol kenara hizala */
+    align-items: center;
+    margin-top: 1%;
+    background-color: #FFFFFF;
+}
+
+    .kuvvet_radio input[type="radio"] {
+        display: none; /* Görünmez radio düğmesi */
+    }
+
+    .kuvvet_radio label {
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 1%; /* Radio düğmesinden sonra biraz boşluk bırakmak için */
+        font-size: 14px;
+    }
+    .kuvvet_radio input[type="radio"] + label {
+        margin-right: 35px; /* İlk grupla ikinci grup arasındaki boşluk */
+    }
+    .kuvvet_radio input[type="radio"] + label:before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px; /* İsteğe bağlı: Etiketle arasında boşluk bırakmak için */
+        border: none;
+        background-color: #BAB5B5; /* Çerçeve rengi */
+        border-radius: 50%; /* Dairesel şekil oluşturmak için */
+        vertical-align: middle; /* Dikey hizalama */
+    }
+
+    .kuvvet_radio input[type="radio"]:checked + label:before {
+        background-color: #BE1C7F; /* Dolgu rengini belirle */
+    }
+
+
+.cikis_rulmanlari {
+    width: 85%;
+    margin-top: 10px;
+}
+.rulman_radio {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+    background-color: #FFFFFF;
+}
+    .rulman_radio input[type="radio"] {
+        display: none; /* Görünmez radio düğmesi */
+    }
+    .rulman_radio label {
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 1%; /* Radio düğmesinden sonra biraz boşluk bırakmak için */
+        font-size: 14px;
+    }
+.rulman_radio input[type="radio"] + label {
+    margin-right: 30px;  
+}
+    .rulman_radio input[type="radio"] + label:before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px; /* İsteğe bağlı: Etiketle arasında boşluk bırakmak için */
+        border: none;
+        background-color: #BAB5B5; /* Çerçeve rengi */
+        border-radius: 50%; /* Dairesel şekil oluşturmak için */
+        vertical-align: middle; /* Dikey hizalama */
+    }
+    .rulman_radio input[type="radio"]:checked + label:before {
+        background-color: #BE1C7F; /* Dolgu rengini belirle */
+    }
+.otoblokajlik {
+    width: 85%;
+    margin-top: 10px;
+}
+.otoblokaj_radio {
+    display: flex;
+    justify-content: space-between; /* Radio butonları sol kenara hizala */
+    align-items: center;
+    margin-top: 1%;
+    background-color: #FFFFFF;
+}
+    .otoblokaj_radio label {
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 1%; /* Radio düğmesinden sonra biraz boşluk bırakmak için */
+        font-size: 14px;
+    }
+    .otoblokaj_radio input[type="radio"] + label {
+       /* margin-right:5px;*/
+    }
+
+    .otoblokaj_radio input[type="radio"] {
+        display: none; /* Görünmez radio düğmesi */
+    }
+.otoblokaj_radio input[type="radio"] + label:before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px; /* İsteğe bağlı: Etiketle arasında boşluk bırakmak için */
+    border: none;
+    background-color: #BAB5B5; /* Çerçeve rengi */
+    border-radius: 50%; /* Dairesel şekil oluşturmak için */
+    vertical-align: middle; /* Dikey hizalama */
+}
+        .otoblokaj_radio input[type="radio"]:checked + label:before {
+            background-color: #BE1C7F; /* Dolgu rengini belirle */
+        }
+
+.right {
+    display: flex;
+    justify-content: center; /* Yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
+    width: 30%;
+    height: 95%;
+    background-color: #FFFFFF;
+}
+
+.formA_resim {
+    max-width: 60%; /* Resmin div içinde taşmasını önler */
+    max-height: 60%; /* Resmin div içinde taşmasını önler */
+}
+

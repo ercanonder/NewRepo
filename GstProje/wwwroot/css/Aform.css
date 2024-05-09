@@ -1,0 +1,281 @@
+﻿.ortaGenel {
+    width: 90%;
+    height: 40%;
+    display: none;
+    margin: 0 auto;
+    background-color: #E8E8E8;
+    border: 2px solid #E8E8E8;
+}
+
+.ortaUst {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 10%;
+    margin: 0 auto;
+    border: 2px solid #E8E8E8;
+    margin-top:1%;
+}
+
+.orta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cikisKuvvetleriSol {
+    padding:2%;
+    width: 40%;
+/*    height: 100%;*/
+    border: 2px solid #BE1C7F;
+}
+
+.ortaBir {
+    width: 95%;
+   /* height:45%;*/
+}
+
+    .ortaBir input[type="radio"] {
+        display: none; /* Görünmez radio düğmesi */
+    }
+
+    .ortaBir label {
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 1%; /* Radio düğmesinden sonra biraz boşluk bırakmak için */
+        font-size: 13px;
+        font-family:'Montserrat' ,sans-serif;
+    }
+
+    /* Radio düğmesi seçildiğinde içi dolu görünüm */
+    .ortaBir input[type="radio"] + label:before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px; /* İsteğe bağlı: Etiketle arasında boşluk bırakmak için */
+        border: none;
+        background-color: #BAB5B5; /* Çerçeve rengi */
+        border-radius: 50%; /* Dairesel şekil oluşturmak için */
+        vertical-align: middle; /* Dikey hizalama */
+    }
+
+    /* Radio düğmesi seçildiğinde içi dolu görünüm */
+    .ortaBir input[type="radio"]:checked + label:before {
+        background-color: #BE1C7F; /* Dolgu rengini belirle */
+    }
+
+
+.ortaIki {
+    display: flex;
+    margin-top:7%;
+
+}
+.ortaIkiSol{
+
+}
+    .ortaIkiSol input[type="radio"] {
+        display: none; /* Görünmez radio düğmesi */
+    }
+
+    .ortaIkiSol label {
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 1%;
+        margin-bottom:15%;/* Radio düğmesinden sonra biraz boşluk bırakmak için */
+        font-size: 13px;
+        font-family: 'Montserrat',sans-serif;
+    }
+
+/* Radio düğmesi seçildiğinde içi dolu görünüm */
+    .ortaIkiSol input[type="radio"] + label:before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px; /* İsteğe bağlı: Etiketle arasında boşluk bırakmak için */
+        border: none;
+        background-color: #BAB5B5; /* Çerçeve rengi */
+        border-radius: 50%; /* Dairesel şekil oluşturmak için */
+        vertical-align: middle; /* Dikey hizalama */
+    }
+
+/* Radio düğmesi seçildiğinde içi dolu görünüm */
+    .ortaIkiSol input[type="radio"]:checked + label:before {
+        background-color: #BE1C7F; /* Dolgu rengini belirle */
+    }
+.ortaIkiSag{
+    
+}
+    .ortaIkiSag input[type="text"] {
+        vertical-align: middle; /* Dikey hizalama */
+        width: 20%;
+        height: 15%;
+        padding: 1%;
+        text-align: center;
+        /*padding-left: 8%;*/
+        border: 1px solid #BE1C7F; /* Çerçeve rengi ve kalınlığını belirler */
+        border-radius: 15%; /* TextBox'in köşelerini yuvarlar */
+        background-color: #E8E8E8;
+        font-size: 13px;
+        font-family: 'Montserrat',sans-serif;
+    }
+
+
+.ortaUc {
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    margin-inline:5%;
+    font-size: 13px;
+    font-family: 'Montserrat',sans-serif;
+}
+    .ortaUc input[type="text"] {
+        vertical-align: middle; /* Dikey hizalama */
+        margin-left: 10%;
+        width: 30%;
+        height: 15%;
+        padding: 1%;
+        /*        text-align: center;*/
+        border: 1px solid #BE1C7F; /* Çerçeve rengi ve kalınlığını belirler */
+        border-radius: 8%; /* TextBox'in köşelerini yuvarlar */
+        background-color: #E8E8E8;
+        font-size: 13px;
+        font-family: 'Montserrat',sans-serif;
+    }
+.cikisKuvvetleriSag {
+    padding: 2%;
+    width: 40%;
+/*    height: 100%;*/
+    border: 2px solid #BE1C7F;
+}
+
+.cikisKuvvetleriSagBir {
+    width: 95%;
+    /*height: 45%;*/
+}
+
+    .cikisKuvvetleriSagBir input[type="radio"] {
+        display: none; /* Görünmez radio düğmesi */
+    }
+
+    .cikisKuvvetleriSagBir label {
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 1%; /* Radio düğmesinden sonra biraz boşluk bırakmak için */
+        font-size: 13px;
+        font-family: 'Montserrat',sans-serif;
+    }
+
+    /* Radio düğmesi seçildiğinde içi dolu görünüm */
+    .cikisKuvvetleriSagBir input[type="radio"] + label:before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px; /* İsteğe bağlı: Etiketle arasında boşluk bırakmak için */
+        border: none;
+        background-color: #BAB5B5; /* Çerçeve rengi */
+        border-radius: 50%; /* Dairesel şekil oluşturmak için */
+        vertical-align: middle; /* Dikey hizalama */
+    }
+
+    /* Radio düğmesi seçildiğinde içi dolu görünüm */
+    .cikisKuvvetleriSagBir input[type="radio"]:checked + label:before {
+        background-color: #BE1C7F; /* Dolgu rengini belirle */
+    }
+
+.cikisKuvvetleriSagIki {
+    display: flex;
+    margin-top: 11%;
+}
+
+.cikisKuvvetleriSagIkiSol {
+    margin-left: 6%;
+    width: 25%;
+}
+
+    .cikisKuvvetleriSagIkiSol label {
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 1%; /* Radio düğmesinden sonra biraz boşluk bırakmak için */
+        font-size: 13px;
+        font-family: 'Montserrat',sans-serif;
+    }
+
+.cikisKuvvetleriSagIkiSag {
+}
+
+    .cikisKuvvetleriSagIkiSag input[type="text"] {
+        margin-left: 10%;
+        vertical-align: middle; /* Dikey hizalama */
+        width: 20%;
+        height: 80%;
+        padding: 1%;
+        text-align: center;
+        border: 1px solid #BE1C7F; /* Çerçeve rengi ve kalınlığını belirler */
+        border-radius: 15%; /* TextBox'in köşelerini yuvarlar */
+        background-color: #E8E8E8;
+        font-size: 13px;
+        font-family: 'Montserrat',sans-serif;
+    }
+
+.cikisKuvvetleriSagUc {
+    display: flex;
+    align-items: center;
+    margin-top: 11%;
+}
+
+.cikisKuvvetleriSagUcSol {
+    margin-left: 6%;
+    font-size: 13px;
+    font-family: 'Montserrat',sans-serif;
+    white-space: nowrap;
+}
+
+ .cikisKuvvetleriSagUcSol label {
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 1%; /* Radio düğmesinden sonra biraz boşluk bırakmak için */
+    font-size: 13px;
+    font-family: 'Montserrat',sans-serif;
+    white-space: nowrap;
+}
+
+.cikisKuvvetleriSagUcSag {
+    margin-top:2%;
+    width: 95%;
+    height: 85%;
+}
+
+    .cikisKuvvetleriSagUcSag input[type="radio"] {
+        display: none; /* Görünmez radio düğmesi */
+    }
+
+    .cikisKuvvetleriSagUcSag label {
+        display: inline-block;
+        cursor: pointer;
+        padding-left: 10%; /* Radio düğmesinden sonra biraz boşluk bırakmak için */
+        font-size: 13px;
+        font-family: 'Montserrat',sans-serif;
+        vertical-align:middle;
+    }
+
+    /* Radio düğmesi seçildiğinde içi dolu görünüm */
+    .cikisKuvvetleriSagUcSag input[type="radio"] + label:before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px; /* İsteğe bağlı: Etiketle arasında boşluk bırakmak için */
+        border: none;
+        background-color: #BAB5B5; /* Çerçeve rengi */
+        border-radius: 50%; /* Dairesel şekil oluşturmak için */
+        vertical-align: middle; /* Dikey hizalama */
+    }
+
+    /* Radio düğmesi seçildiğinde içi dolu görünüm */
+    .cikisKuvvetleriSagUcSag input[type="radio"]:checked + label:before {
+        background-color: #BE1C7F; /* Dolgu rengini belirle */
+    }
+
